@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
-const jwtPrivateKey = process.env.jwtPrivateKey;
+const jwtPrivateKey = process.env.JWTPRIVATEKEY;
 // const userSchema = new mongoose.Schema({
 //   title: { type: String, minlength: 1, maxlength: 50 },
 

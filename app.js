@@ -9,8 +9,8 @@ const routerAuth = require("./routes/auth");
 
 const express = require("express");
 const app = express();
-
-if (process.env.jwtPrivateKey) {
+console.log(process.env.JWTPRIVATEKEY);
+if (!process.env.JWTPRIVATEKEY) {
   console.log("FATAL ERROR!");
   process.exit(1);
 }

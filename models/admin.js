@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const Joi = require("joi");
 const mongoose = require("mongoose");
-const jwtPrivateKey = process.env.jwtPrivateKey;
+const jwtPrivateKey = process.env.JWTPRIVATEKEY;
 
 const adminSchema = new mongoose.Schema({
   name: { type: String, minlength: 3, maxlength: 50 },
