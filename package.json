@@ -1,11 +1,12 @@
 {
   "name": "iminingBackend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "imining backend apis",
   "scripts": {
-    "start": "node ./app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./app.js"
+  },
+  "engine": {
+    "node": "14.6.0"
   },
   "keywords": [],
   "author": "",
