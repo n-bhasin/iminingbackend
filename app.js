@@ -29,9 +29,9 @@ mongoose
 app.use(express.json());
 app.use(cors());
 //routes
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello World!");
+// });
 app.use("/api/imining/admin", adminRouter);
 // app.use("/api/telemarket/campaign", campaignRouter);
 app.use("/api/imining/user", userRouter);

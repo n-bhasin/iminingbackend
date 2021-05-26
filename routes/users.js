@@ -5,6 +5,11 @@ const auth = require("../middleware/auth");
 const express = require("express");
 const router = express.Router();
 
+router.get("/health", async (req, res) => {
+  // const user = await User.findById(req.user._id).sort("-date");
+  res.status(200).send("OK!");
+});
+
 router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id).sort("-date");
   res.send(user);
