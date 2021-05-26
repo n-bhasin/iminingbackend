@@ -25,8 +25,8 @@ mongoose
   .catch((err) => console.log(err));
 
 //middlewares
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(cors());
 //routes
 app.get("/", (req, res) => {
